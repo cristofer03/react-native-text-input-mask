@@ -26,7 +26,7 @@ buildscript {
         project.ext.safeExtGet = { prop, fallback ->
             return rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
         }
-        kotlinVersion = project.ext.safeExtGet('kotlinVersion', '1.8.21')
+        kotlinVersion = project.ext.safeExtGet('kotlinVersion', '1.6.10')
     }
     repositories {
         google()
